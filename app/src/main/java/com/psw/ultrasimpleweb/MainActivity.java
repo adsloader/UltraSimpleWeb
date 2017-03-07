@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         set.setJavaScriptEnabled(true);
         // 줌인아웃을 불가능하게
         set.setBuiltInZoomControls(false);
+        
+        // Zoom 버튼의 보여지기 설정  -> Pinch로 Zoom을 가능하게 할 수도 있음 
+        // 아래와 같이하면 
+        // setBuiltInZoomControls(true)
+        // set.setDisplayZoomControls(false);
 
         btnNaver = (Button) findViewById(R.id.btnNaver);
         btnNaver.setOnClickListener(new View.OnClickListener() {
